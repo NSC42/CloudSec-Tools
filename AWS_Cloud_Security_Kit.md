@@ -102,6 +102,7 @@ https://github.com/jordanpotti/AWSBucketDump
 
 ---
 
+# OTher : Tony's mega AWS Tools: https://github.com/toniblyx/my-arsenal-of-aws-security-tools
 
 # OTHERS - CREDIT STUHIRST & TONY DELAFUENTE 
 # Original Link: https://github.com/stuhirst/awssecurity/blob/master/arsenal.md
