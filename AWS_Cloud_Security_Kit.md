@@ -8,17 +8,17 @@
 - [Frameworks](#Reference_Frameworks)
 - [Contribute](#contribute)
 - [Linked Repo](#other_Repos)
-- [ShortList](#Short_List)
+-[ShortList](#Short_List)
 
-- [Detailed List](#DETAILED_LIST)
--- [Defensive](#defensive-hardening-security-assessment-and-inventory)
--- [Offensive](#offensive)
--- [Continuous Security Auditing](#continuous-security-auditing)
--- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
--- [Development Security](#development-security)
--- [S3 Buckets Auditing](#s3-buckets-auditing)
--- [Training](#training)
--- [Other interesting tools/code](#other-interesting-tools/code)
+[Detailed List](#DETAILED_LIST)
+- [Defensive](#defensive-hardening-security-assessment-and-inventory)
+- [Offensive](#offensive)
+- [Continuous Security Auditing](#continuous-security-auditing)
+- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
+- [Development Security](#development-security)
+- [S3 Buckets Auditing](#s3-buckets-auditing)
+- [Training](#training)
+- [Other interesting tools/code](#other-interesting-tools/code)
 
 ## Disclaimer:
 This is a group of tools references and resources put together for AWS, Azure and GCP.
