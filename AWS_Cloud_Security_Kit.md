@@ -1,13 +1,15 @@
 # Cloud-Security-Resources- NEW REPO
 ## Table of Contents
-- [Intro](#Short_List)
--- [Disclaimer](#Disclaimer)
--- [Thanks](#Thanks)
--- [Frameworks](#Reference_Frameworks)
--- [Contribute](#contribute)
--- [Linked Repo](#other_Repos)
+
+## [Intro](#Disclaimer)
+
+- [Disclaimer](#Disclaimer)
+- [Thanks](#Thanks)
+- [Frameworks](#Reference_Frameworks)
+- [Contribute](#contribute)
+- [Linked Repo](#other_Repos)
 - [ShortList](#Short_List)
--- [Defensive](#defensive-hardening-security-assessment-and-inventory)
+
 - [Detailed List](#DETAILED_LIST)
 -- [Defensive](#defensive-hardening-security-assessment-and-inventory)
 -- [Offensive](#offensive)
