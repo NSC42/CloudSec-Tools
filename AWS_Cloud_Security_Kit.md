@@ -1,167 +1,72 @@
 # Cloud-Security-Resources- NEW REPO
-List of cloud Security Resources and tools
+## Table of Contents
+- [Intro](#Short_List)
+-- [Disclaimer](#Disclaimer)
+-- [Thanks](#Thanks)
+-- [Frameworks](#Reference_Frameworks)
+-- [Contribute](#contribute)
+-- [Linked Repo](#other_Repos)
+- [ShortList](#Short_List)
+-- [Defensive](#defensive-hardening-security-assessment-and-inventory)
+- [Detailed List](#DETAILED_LIST)
+-- [Defensive](#defensive-hardening-security-assessment-and-inventory)
+-- [Offensive](#offensive)
+-- [Continuous Security Auditing](#continuous-security-auditing)
+-- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
+-- [Development Security](#development-security)
+-- [S3 Buckets Auditing](#s3-buckets-auditing)
+-- [Training](#training)
+-- [Other interesting tools/code](#other-interesting-tools/code)
 
-Disclaimer:
+## Disclaimer:
 This is a group of tools references and resources put together for AWS, Azure and GCP.
 Feel free to reference it and use it.
 
 Please quote the author :) be kind
 
-#####
-# AWS 
-####
 
+## Contribute
+Do you want to contribute to this list? Feel free to send a PR and make sure your tool is [Open Source](https://en.wikipedia.org/wiki/Open_source).
 
-# Name - CloudSplaining 
-Resource - IAM
-Platform - AWS
+## Thanks
+Thanks to this amazing list of contributors 
+Tony de la fuente where most of this list comes from 
+| Name | URL | Description | Granularity | Contribution |
+| ---------- | :---------- | :---------- | :----------: | :----------: |
+| Tony Delafuente | https://github.com/toniblyx/my-arsenal-of-aws-security-tools | Tony Main List of resources | High | High |
+| Francesco Cipollone | This | High| Med| 
 
-Cloudsplaining is an AWS IAM Security Assessment tool that identifies violations of least privilege and generates a risk-prioritized HTML report with a triage worksheet. https://cloudsplaining.readthedocs.io/
+## Reference_Frameworks
+Also a list for documentation
 
-Link: https://github.com/salesforce/cloudsplaining.git
-----
+| Name | URL | Description | Mapping to other | Usability |
+| ---------- | :---------- | :---------- | :----------: | :----------: |
+| CIS | https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/,  https://d0.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf  | CIS Control Framework for Cloud | High | High |
+| Cloud Control Matrix | https://cloudsecurityalliance.org/research/working-groups/cloud-controls-matrix | CSA Maturity Matrix | Yes | High |
+| Sentinel Terraform Templates | https://www.terraform.io/docs/cloud/sentinel/index.html | Templates | N/A | N/A |
 
-# Name - Sentinel Hashicoper Terraform Template 
-Resource - Terraform, CIS
-Platform - AWS
+## Other_Repos
+| Name | URL | Description | Popularity | Metadata |
+| ---------- | :---------- | :---------- | :----------: | :----------: |
+| **My Arsenal of AWS Security Tools** | [https://github.com/toniblyx/my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools) | This list of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.|[![stars](https://badgen.net/github/stars/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/stars/toniblyx/my-arsenal-of-aws-security-tools)| [![contributors](https://badgen.net/github/contributors/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/contributors/toniblyx/my-arsenal-of-aws-security-tools) [![watchers](https://badgen.net/github/watchers/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/watchers/toniblyx/my-arsenal-of-aws-security-tools) [![last-commit](https://badgen.net/github/last-commit/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/last-commit/toniblyx/my-arsenal-of-aws-security-tools)  [![open-issues](https://badgen.net/github/open-issues/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/open-issues/toniblyx/my-arsenal-of-aws-security-tools) [![closed-issues](https://badgen.net/github/closed-issues/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/closed-issues/toniblyx/my-arsenal-of-aws-security-tools) |
+| **Francesco Arsenal AWS** | [https://github.com/franksec42/my-arsenal-of-aws-security-tools](https://github.com/franksec42/my-arsenal-of-aws-security-tools) | This list of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.|[![stars](https://badgen.net/github/stars/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/stars/franksec42/my-arsenal-of-aws-security-tools)| [![contributors](https://badgen.net/github/contributors/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/contributors/franksec42/my-arsenal-of-aws-security-tools) [![watchers](https://badgen.net/github/watchers/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/watchers/franksec42/my-arsenal-of-aws-security-tools) [![last-commit](https://badgen.net/github/last-commit/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/last-commit/franksec42/my-arsenal-of-aws-security-tools)  [![open-issues](https://badgen.net/github/open-issues/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/open-issues/franksec42/my-arsenal-of-aws-security-tools) [![closed-issues](https://badgen.net/github/closed-issues/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/closed-issues/franksec42/my-arsenal-of-aws-security-tools) |
 
-Sentinel is a language and framework for policy built to be embedded in existing software to enable fine-grained, logic-based policy decisions. This repository contains a library of Sentinel policies, developed by HashiCorp, that can be consumed directly within the Terraform Cloud platform.
+## Short_List
 
-Link: https://github.com/salesforce/cloudsplaining
----
-
-# PROWLER - Tool based on AWS-CLI commands 
-1. prowler - Tool based on AWS-CLI commands for AWS account hardening, following guidelines of the CIS Amazon Web Services Foundations Benchmark 
-# Link: https://github.com/toniblyx/prowler 
----
-
-# CIS - CIS Compliance for AWS
-# Link: https://d0.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf)
-
----
-
-# SCOUT2 - Security auditing tool for AWS environments 
-nccgroup/Scout2 - Security auditing tool for AWS environments 
-# Link: https://github.com/nccgroup/Scout2 
-
----
-
-# CloudSploit scan - AWS security scanning checks
-nccgroup/Scout2 - Security auditing tool for AWS environments 
-# Link: https://github.com/cloudsploit/scans
-
---
-# Amazon Inspector Official
-
-# Link https://aws.amazon.com/inspector/
+| Name | Resource Area | Link | Use | AREA | Description | 
+| ---------- | :---------- | :---------- | :---------- | :---------- | :----------: | 
+| CloudSplaining | RISK | https://github.com/salesforce/cloudsplaining.git | Assess | IAM | Cloudsplaining is an AWS IAM Security Assessment tool that identifies violations of least privilege and generates a risk-prioritized HTML report with a triage worksheet. https://cloudsplaining.readthedocs.io/ | 
+| Prowler | Tool-Audit | https://github.com/toniblyx/prowler | Assessment | AWS | prowler - Tool based on AWS-CLI commands for AWS account hardening, following guidelines of the CIS Amazon Web Services Foundations Benchmark |  
+| SCOUT2 | Tool-Audit | https://github.com/cloudsploit/scans | Audit | AWS | nccgroup/Scout2 - Security auditing tool for AWS environments  |  
+| CloudSploit scan | Tool-Audit | https://aws.amazon.com/inspector/ | Audit | AWS | AWS security scanning checks  |  
+| Netflix Security Monkey  | Tool-Audit | https://github.com/Netflix/security_monkey | Audit | AWS |  Netflix/security_monkey - Security Monkey monitors your AWS and GCP accounts for policy changes and alerts on insecure configuration  |  
+| Netflix Aardvark  | Tool-Audit | https://github.com/Netflix/security_monkey | API | AWS |  Netflix/Aardvark is a multi-account AWS IAM Access Advisor API  |  
+| Netflix RepoKid  | Tool-Audit | https://github.com/Netflix/repokid | Tool | RBAC |  AWS Least Privilege for Distributed, High-Velocity Deployment  |  
+| Zeus  | Tool-Audit | https://github.com/DenizParlak/Zeus | Hardening | All-AWS |  DenizParlak/Zeus - AWS Auditing & Hardening Tool http://www.denizparlak.com/?p=386   |  
+| Nimbostratus   | Tool-Audit | https://github.com/andresriancho/nimbostratus | Infra | All-AWS |  Fingerprinting and Exploiting Cloud infra imbostratus - Tools for fingerprinting and exploiting Amazon cloud infrastructures + video presentation and intro blog post Instruction Link: https://andresriancho.github.io/nimbostratus/ |  
+| Bucketdump  | Tool-Bucket | https://github.com/jordanpotti/AWSBucketDump | Buckets | All-AWS |  |  
  
- ---
  
- # Netflix Security Monkey 
- Netflix/security_monkey - Security Monkey monitors your AWS and GCP accounts for policy changes and alerts on insecure configurations
-# Link https://github.com/Netflix/security_monkey
- 
- ---
- 
- # Netflix - Aardvark
- 
-6. Aardvark - Aardvark is a multi-account AWS IAM Access Advisor API
-# Link: https://github.com/Netflix-Skunkworks/aardvark
-
- # Netflix - RepoKid
-  Repokid - AWS Least Privilege for Distributed, High-Velocity Deployment
-  
- # Link: https://github.com/Netflix/repokid 
-  
-  ---
- # AWS Zeus - by Deniz
-  
-8. DenizParlak/Zeus - AWS Auditing & Hardening Tool 
-
-# Link http://www.denizparlak.com/?p=386
-----
-
-# Nimbostratus Fingerprinting and Exploiting Cloud infra 
-
-9. Nimbostratus - Tools for fingerprinting and exploiting Amazon cloud infrastructures + video presentation and intro blog post
-# Instruction Link: https://andresriancho.github.io/nimbostratus/
-# GIT: https://github.com/andresriancho/nimbostratus
-----
-
-# Bitbucket Finder 
-
-10. Bucket finder - This is a fairly simple tool to run, all it requires is a wordlist and it will go off and check each word to see if that bucket name exists in the Amazon's S3 system. Any that it finds it will check to see if the bucket is public, private or a redirect.
-
-# link -  TBD
-
---
-
-# Bucket Dump 
-
-https://github.com/jordanpotti/AWSBucketDump
-
----
-
-# OTher : Tony's mega AWS Tools: https://github.com/toniblyx/my-arsenal-of-aws-security-tools
-
-# OTHERS - CREDIT STUHIRST & TONY DELAFUENTE 
-# Original Link: https://github.com/stuhirst/awssecurity/blob/master/arsenal.md
-
-# AWS Arsenal
- 
-
-**Defensive (Hardening, Security Assessment, Inventory)**
-
-* **ScoutSuite**: [https://github.com/nccgroup/ScoutSuite](https://github.com/nccgroup/ScoutSuite) - Security auditing tool for AWS environments (Python)
-* **Prowler**: [https://github.com/toniblyx/prowler](https://github.com/toniblyx/prowler) - CIS benchmarks and additional checks for security best practices in AWS (Shell Script)
-* **Scans**: [https://github.com/cloudsploit/scans](https://github.com/cloudsploit/scans) - AWS security scanning checks (NodeJS)
-* **CloudMapper**: [https://github.com/duo-labs/cloudmapper](https://github.com/duo-labs/cloudmapper) - helps you analyze your AWS environments (Python)
-* **CloudTracker**: [https://github.com/duo-labs/cloudtracker](https://github.com/duo-labs/cloudtracker) - helps you find over-privileged IAM users and roles by comparing CloudTrail logs with current IAM policies (Python)
-* **AWS Security Benchmarks**: [https://github.com/awslabs/aws-security-benchmark](https://github.com/awslabs/aws-security-benchmark) - scrips and templates guidance related to the AWS CIS Foundation framework (Python)
-* **AWS Public IPs**: [https://github.com/arkadiyt/aws_public_ips](https://github.com/arkadiyt/aws_public_ips) - Fetch all public IP addresses tied to your AWS account. Works with IPv4/IPv6, Classic/VPC networking, and across all AWS services (Ruby)
-* **PMapper**: [https://github.com/nccgroup/PMapper](https://github.com/nccgroup/PMapper) - Advanced and Automated AWS IAM Evaluation (Python)
-* **AWS-Inventory**: [https://github.com/nccgroup/aws-inventory](https://github.com/nccgroup/aws-inventory) - Make a inventory of all your resources across regions (Python)
-* **Resource Counter**: [https://github.com/disruptops/resource-counter](https://github.com/disruptops/resource-counter) - Counts number of resources in categories across regions
-* **Checkov**: https://github.com/bridgecrewio/checkov - Checkov is a static code analysis tool for infrastructure-as-code. It scans cloud infrastructure provisioned using Terraform and detects security and compliance misconfigurations.
-
-**Offensive:**
-
-* **weirdALL**: [https://github.com/carnal0wnage/weirdAAL](https://github.com/carnal0wnage/weirdAAL) - AWS Attack Library
-* **Pacu**: [https://github.com/RhinoSecurityLabs/pacu](https://github.com/RhinoSecurityLabs/pacu) - AWS penetration testing toolkit
-* **Cred Scanner**: [https://github.com/disruptops/cred_scanner](https://github.com/disruptops/cred_scanner) 
-* **AWS PWN**: [https://github.com/dagrz/aws_pwn](https://github.com/dagrz/aws_pwn) 
-* **Cloudfrunt**: [https://github.com/MindPointGroup/cloudfrunt](https://github.com/MindPointGroup/cloudfrunt)
-* **Cloudjack**: [https://github.com/prevade/cloudjack](https://github.com/prevade/cloudjack)
-* **Nimbostratus**: [https://github.com/andresriancho/nimbostratus](https://github.com/andresriancho/nimbostratus)
-
-**Continuous Security Auditing:**
-
-* **hammer** https://github.com/dowjones/hammer
-* **PacBot** https://github.com/tmobile/pacbot
-* **Security Monkey**: [https://github.com/Netflix/security_monkey](https://github.com/Netflix/security_monkey)
-* **Krampus** (as Security Monkey complement) [https://github.com/sendgrid/krampus](https://github.com/sendgrid/krampus) 
-* **Cloud Inquisitor**: [https://github.com/RiotGames/cloud-inquisitor](https://github.com/RiotGames/cloud-inquisitor)
-* **CloudCustodian**: [https://github.com/capitalone/cloud-custodian](https://github.com/capitalone/cloud-custodian)
-* **Disable keys after X days**: [https://github.com/te-papa/aws-key-disabler](https://github.com/te-papa/aws-key-disabler)
-* **Repokid** Least Privilege: [https://github.com/Netflix/repokid](https://github.com/Netflix/repokid)
-* **Wazuh CloudTrail module**: [https://documentation.wazuh.com/current/amazon/index.html](https://documentation.wazuh.com/current/amazon/index.html)
-* **Detect Credential Compromise** https://github.com/jchrisfarris/detect-credential-compromise
-* **Barq** https://github.com/Voulnet/barq - post exploitation tool
-* **smogcloud** https://github.com/BishopFox/smogcloud - Find cloud assets that no one wants exposed
-
-**DFIR:** 
-
-* **AWS IR**: [https://github.com/ThreatResponse/aws_ir](https://github.com/ThreatResponse/aws_ir) - AWS specific Incident Response and Forensics Tool
-* **Margaritashotgun**: [https://github.com/ThreatResponse/margaritashotgun](https://github.com/ThreatResponse/margaritashotgun) - Linux memory remote acquisition tool
-* **LiMEaide**: [https://kd8bny.github.io/LiMEaide/](https://kd8bny.github.io/LiMEaide/) - Linux memory remote acquisition tool
-* **Diffy**: [https://github.com/Netflix-Skunkworks/diffy](https://github.com/Netflix-Skunkworks/diffy) - Triage tool used during cloud-centric security incidents
-
-**Development Security:**
-
-* **CFN NAG**: [https://github.com/stelligent/cfn_nag](https://github.com/stelligent/cfn_nag) -  CloudFormation security test (Ruby)
-* **Git-secrets**: [https://github.com/awslabs/git-secrets](https://github.com/awslabs/git-secrets)
-* **Repository of sample Custom Rules for AWS Config**: [https://github.com/awslabs/aws-config-rules](https://github.com/awslabs/aws-config-rules)
-
 **S3 Buckets Auditing:**
 
 * [https://github.com/Parasimpaticki/sandcastle](https://github.com/Parasimpaticki/sandcastle) 
@@ -185,11 +90,16 @@ https://github.com/jordanpotti/AWSBucketDump
 * [https://buckets.grayhatwarfare.com/](https://buckets.grayhatwarfare.com/)
 
 
+ 
+ 
 **Training:**
 
 * **Flaws** [http://flaws.cloud/](http://flaws.cloud/) 
 * **Flaws2** http://flaws2.cloud/
 * **Cloudgoat** https://github.com/RhinoSecurityLabs/cloudgoat 
+
+---
+
 
 **Others:**
 
@@ -220,48 +130,7 @@ https://github.com/jordanpotti/AWSBucketDump
 **CloudFormation and Terraform**
 
 
-Alternative View
-
-## Table of Contents
-- [Thanks](#Thanks)
-- [Frameworks](#Reference_Frameworks)
-- [Contribute](#contribute)
-- [Linked Repo](#other_Repos)
-- [Defensive](#defensive-hardening-security-assessment-and-inventory)
-- [Offensive](#offensive)
-- [Continuous Security Auditing](#continuous-security-auditing)
-- [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
-- [Development Security](#development-security)
-- [S3 Buckets Auditing](#s3-buckets-auditing)
-- [Training](#training)
-- [Other interesting tools/code](#other-interesting-tools/code)
-
-## Contribute
-Do you want to contribute to this list? Feel free to send a PR and make sure your tool is [Open Source](https://en.wikipedia.org/wiki/Open_source).
-
-## Thanks
-Thanks to this amazing list of contributors 
-Tony de la fuente where most of this list comes from 
-| Name | URL | Description | Granularity | Contribution |
-| ---------- | :---------- | :---------- | :----------: | :----------: |
-| Tony Delafuente | https://github.com/toniblyx/my-arsenal-of-aws-security-tools | Tony Main List of resources | High | High |
-| Francesco Cipollone | This | High| Med| 
-
-## Reference_Frameworks
-
-| Name | URL | Description | Mapping to other | Usability |
-| ---------- | :---------- | :---------- | :----------: | :----------: |
-| CIS | https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/ | CIS Control Framework for Cloud | High | High |
-| Cloud Control Matrix | https://cloudsecurityalliance.org/research/working-groups/cloud-controls-matrix | CSA Maturity Matrix | Yes | High |
-| Cloud Control Matrix | https://cloudsecurityalliance.org/research/working-groups/cloud-controls-matrix | CSA Maturity Matrix | Yes | High |
-
-## Other_Repos
-| Name | URL | Description | Popularity | Metadata |
-| ---------- | :---------- | :---------- | :----------: | :----------: |
-| **My Arsenal of AWS Security Tools** | [https://github.com/toniblyx/my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools) | This list of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.|[![stars](https://badgen.net/github/stars/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/stars/toniblyx/my-arsenal-of-aws-security-tools)| [![contributors](https://badgen.net/github/contributors/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/contributors/toniblyx/my-arsenal-of-aws-security-tools) [![watchers](https://badgen.net/github/watchers/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/watchers/toniblyx/my-arsenal-of-aws-security-tools) [![last-commit](https://badgen.net/github/last-commit/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/last-commit/toniblyx/my-arsenal-of-aws-security-tools)  [![open-issues](https://badgen.net/github/open-issues/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/open-issues/toniblyx/my-arsenal-of-aws-security-tools) [![closed-issues](https://badgen.net/github/closed-issues/toniblyx/my-arsenal-of-aws-security-tools)](https://badgen.net/github/closed-issues/toniblyx/my-arsenal-of-aws-security-tools) |
-| **Francesco Arsenal AWS** | [https://github.com/franksec42/my-arsenal-of-aws-security-tools](https://github.com/franksec42/my-arsenal-of-aws-security-tools) | This list of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc.|[![stars](https://badgen.net/github/stars/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/stars/franksec42/my-arsenal-of-aws-security-tools)| [![contributors](https://badgen.net/github/contributors/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/contributors/franksec42/my-arsenal-of-aws-security-tools) [![watchers](https://badgen.net/github/watchers/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/watchers/franksec42/my-arsenal-of-aws-security-tools) [![last-commit](https://badgen.net/github/last-commit/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/last-commit/franksec42/my-arsenal-of-aws-security-tools)  [![open-issues](https://badgen.net/github/open-issues/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/open-issues/franksec42/my-arsenal-of-aws-security-tools) [![closed-issues](https://badgen.net/github/closed-issues/franksec42/my-arsenal-of-aws-security-tools)](https://badgen.net/github/closed-issues/franksec42/my-arsenal-of-aws-security-tools) |
-
-
+## DETAILED_LIST
 ## Defensive: Hardening, Security Assessment and Inventory
 | Name | URL | Description | Popularity | Metadata |
 | ---------- | :---------- | :---------- | :----------: | :----------: |
